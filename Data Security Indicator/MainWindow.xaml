@@ -5,8 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Data_Security_Indicator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="800"
+        ResizeMode="NoResize">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="170*"></ColumnDefinition>
+            <ColumnDefinition Width="521*"></ColumnDefinition>
+            <ColumnDefinition Width="109*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <ComboBox HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="86"></ComboBox>
+        <TextBlock Grid.Column="1" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Width="418">Dangers Of Low Security/Privacy Knowledge</TextBlock>
+
+        <TextBlock Grid.Column="1" FontSize="20" FontWeight="Bold" Grid.Row="1" TextWrapping="Wrap" Margin="0,0,0,183" Grid.RowSpan="2">Phishing Scheme: Falling for phishing schemes is incredibly dangerous, as it may involve giving out sensitive information (social security number) or downloading viruses/malware that can give hackers access to your computer/information.</TextBlock>
+        <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="32*"></RowDefinition>
+                <RowDefinition Height="90*"></RowDefinition>
+                <RowDefinition Height="61*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="157*"></ColumnDefinition>
+                <ColumnDefinition Width="534*"></ColumnDefinition>
+                <ColumnDefinition Width="109*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Grid.Row="0" Text="Available Space:" FontWeight="Bold"></TextBlock>
+            <TextBlock Grid.Column="0" Text="Some Accessed Files/Folders:" FontWeight="Bold" Margin="0,3,5,0" Grid.Row="1"/>
+            <TextBlock Grid.Column="1" Grid.Row="0" Text="{Binding TotalFreeSpace}"></TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding FilesInRoot}" TextWrapping="Wrap" Margin="10,8,0,0"></TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="1" FontWeight="Bold" Margin="0,90,0,0" Grid.RowSpan="2">Information Stolen:</TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="1" FontWeight="Bold" Margin="11,90,0,0" Grid.RowSpan="2">Passwords, Usernames, Sites Visited, Credit Card details, any info stored on your computer.</TextBlock>
+        </Grid>
+
+        <TextBlock Grid.Row="3" Grid.ColumnSpan="3"></TextBlock>
     </Grid>
 </Window>
