@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Data_Security_Indicator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="800"
+        Title="MainWindow" Height="750" Width="800"
         ResizeMode="NoResize">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -16,20 +16,19 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="171*"></RowDefinition>
+            <RowDefinition Height="199*"></RowDefinition>
+            <RowDefinition Height="242*"></RowDefinition>
         </Grid.RowDefinitions>
         <ComboBox HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="86"></ComboBox>
         <TextBlock Grid.Column="1" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Width="418">Dangers Of Low Security/Privacy Knowledge</TextBlock>
 
-        <TextBlock Grid.Column="1" FontSize="20" FontWeight="Bold" Grid.Row="1" TextWrapping="Wrap" Margin="0,0,0,183" Grid.RowSpan="2">Phishing Scheme: Falling for phishing schemes is incredibly dangerous, as it may involve giving out sensitive information (social security number) or downloading viruses/malware that can give hackers access to your computer/information.</TextBlock>
-        <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
+        <TextBlock Grid.Column="1" FontSize="20" FontWeight="Bold" Grid.Row="1" TextWrapping="Wrap" Margin="0,0,0,3">Phishing Scheme: Falling for phishing schemes is incredibly dangerous, as it may involve giving out sensitive information (social security number) or downloading viruses/malware that can give hackers access to your computer/information.</TextBlock>
+        <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,171,0,0" Grid.RowSpan="2">
             <Grid.RowDefinitions>
-                <RowDefinition Height="32*"></RowDefinition>
-                <RowDefinition Height="90*"></RowDefinition>
-                <RowDefinition Height="61*"></RowDefinition>
+                <RowDefinition Height="42*"></RowDefinition>
+                <RowDefinition Height="127*"></RowDefinition>
+                <RowDefinition Height="73*"></RowDefinition>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="157*"></ColumnDefinition>
@@ -40,10 +39,10 @@
             <TextBlock Grid.Column="0" Text="Some Accessed Files/Folders:" FontWeight="Bold" Margin="0,3,5,0" Grid.Row="1"/>
             <TextBlock Grid.Column="1" Grid.Row="0" Text="{Binding TotalFreeSpace}"></TextBlock>
             <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding FilesInRoot}" TextWrapping="Wrap" Margin="10,8,0,0"></TextBlock>
-            <TextBlock Grid.Column="0" Grid.Row="1" FontWeight="Bold" Margin="0,90,0,0" Grid.RowSpan="2">Information Stolen:</TextBlock>
-            <TextBlock Grid.Column="1" Grid.Row="1" FontWeight="Bold" Margin="11,90,0,0" Grid.RowSpan="2">Passwords, Usernames, Sites Visited, Credit Card details, any info stored on your computer.</TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="2" FontWeight="Bold" Margin="0,3,0,40">Information Stolen:</TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="2" FontWeight="Bold" Margin="11,3,0,40">Passwords, Usernames, Sites Visited, Credit Card details, any info stored on your computer.</TextBlock>
         </Grid>
 
-        <TextBlock Grid.Row="3" Grid.ColumnSpan="3"></TextBlock>
+        <TextBlock Grid.Row="3" Grid.ColumnSpan="3" FontWeight="Bold" TextWrapping="WrapWithOverflow" Margin="0,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="64" Width="793">The information gathered above are some of the many files/folders perpetrators can have access to if they decide to implement a phishing scheme that gives them access to a victims computer. These attacks can be fatal. Not only do phishing perpetrators have access to your data, but they also might have access to your device. Access to your device may lead to potential dangers such as perpetrators having access to your camera/microphones.</TextBlock>
     </Grid>
 </Window>
