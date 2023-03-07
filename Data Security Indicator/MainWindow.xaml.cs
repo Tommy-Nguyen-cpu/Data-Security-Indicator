@@ -18,47 +18,31 @@ namespace Data_Security_Indicator
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Page
     {
-        public class PhishingInfoExample
-        {
-            public string? TotalFreeSpace { get; set; }
-            public string? FilesInRoot { get; set; }
-        }
 
+        private Dictionary<string, string> pages = new Dictionary<string, string>{
+            {"Phishing Scheme", "PhishingSchemePage.xaml" },
+            {"Privacy Policies", "PrivacyPoliciesPage.xaml" }
+        };
 
+        //private NavigationWindow window = new NavigationWindow();
         public MainWindow()
         {
             InitializeComponent();
 
-            System.IO.DriveInfo di = new System.IO.DriveInfo(@"C:\");
-            string totalSpace = $"{di.TotalFreeSpace / 1073741824}";
-            System.Diagnostics.Debug.WriteLine(di.TotalFreeSpace/ 1073741824);
+/*            window.Source = new Uri("PhishingSchemePage.xaml", UriKind.Relative);
+            window.Show();*/
+            /*this.Content = new PhishingSchemePage();*/
+        }
 
-            // Get the root directory and print out some information about it.
-            System.IO.DirectoryInfo dirInfo = di.RootDirectory;
-
-            // Get the files in the directory and print out some information about them.
-            System.IO.FileInfo[] fileNames = dirInfo.GetFiles("*.*");
-            string files = "";
-            for(int i = 0; i < fileNames.Length; i++)
+        private void LOGIN_CLICK(object sender, RoutedEventArgs e)
+        {
+            if(Username.Text.Length > 0 && Password.Password.Length > 0)
             {
-                files += $"{fileNames[i].Name}({fileNames[i].LastAccessTime}), ";
+                this.NavigationService.Navigate(new PhishingSchemePage(Username.Text, Password.Password));
             }
 
-            // Get the subdirectories directly that is under the root.
-            // See "How to: Iterate Through a Directory Tree" for an example of how to
-            // iterate through an entire tree.
-            System.IO.DirectoryInfo[] dirInfos = dirInfo.GetDirectories("*.*");
-
-            for(int i = 0; i < dirInfos.Length; i++)
-            {
-                files += $"{dirInfos[i].Name} ({dirInfos[i].LastAccessTime})";
-                if (i + 1 < dirInfos.Length)
-                    files += ", ";
-            }
-
-            DataContext = new PhishingInfoExample() { TotalFreeSpace= totalSpace, FilesInRoot= files };
         }
     }
 }

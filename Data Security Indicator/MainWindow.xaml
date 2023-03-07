@@ -1,48 +1,55 @@
-﻿<Window x:Class="Data_Security_Indicator.MainWindow"
+﻿<Page x:Class="Data_Security_Indicator.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Data_Security_Indicator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="750" Width="800"
-        ResizeMode="NoResize">
+        Title="MainWindow" Height="750" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="170*"></ColumnDefinition>
-            <ColumnDefinition Width="521*"></ColumnDefinition>
-            <ColumnDefinition Width="109*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50"></RowDefinition>
-            <RowDefinition Height="171*"></RowDefinition>
-            <RowDefinition Height="199*"></RowDefinition>
-            <RowDefinition Height="242*"></RowDefinition>
-        </Grid.RowDefinitions>
-        <ComboBox HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="86"></ComboBox>
-        <TextBlock Grid.Column="1" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Width="418">Dangers Of Low Security/Privacy Knowledge</TextBlock>
+        <Border Background="#006450" Grid.ColumnSpan="3" Margin="0,0,0,10"></Border>
+        <Image Source="/Images/Logo.png" Grid.Column="1" ></Image>
 
-        <TextBlock Grid.Column="1" FontSize="20" FontWeight="Bold" Grid.Row="1" TextWrapping="Wrap" Margin="0,0,0,3">Phishing Scheme: Falling for phishing schemes is incredibly dangerous, as it may involve giving out sensitive information (social security number) or downloading viruses/malware that can give hackers access to your computer/information.</TextBlock>
-        <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,171,0,0" Grid.RowSpan="2">
+        <Grid Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">
             <Grid.RowDefinitions>
-                <RowDefinition Height="42*"></RowDefinition>
-                <RowDefinition Height="127*"></RowDefinition>
-                <RowDefinition Height="73*"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="157*"></ColumnDefinition>
-                <ColumnDefinition Width="534*"></ColumnDefinition>
-                <ColumnDefinition Width="109*"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" Grid.Row="0" Text="Available Space:" FontWeight="Bold"></TextBlock>
-            <TextBlock Grid.Column="0" Text="Some Accessed Files/Folders:" FontWeight="Bold" Margin="0,3,5,0" Grid.Row="1"/>
-            <TextBlock Grid.Column="1" Grid.Row="0" Text="{Binding TotalFreeSpace}"></TextBlock>
-            <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding FilesInRoot}" TextWrapping="Wrap" Margin="10,8,0,0"></TextBlock>
-            <TextBlock Grid.Column="0" Grid.Row="2" FontWeight="Bold" Margin="0,3,0,40">Information Stolen:</TextBlock>
-            <TextBlock Grid.Column="1" Grid.Row="2" FontWeight="Bold" Margin="11,3,0,40">Passwords, Usernames, Sites Visited, Credit Card details, any info stored on your computer.</TextBlock>
-        </Grid>
 
-        <TextBlock Grid.Row="3" Grid.ColumnSpan="3" FontWeight="Bold" TextWrapping="WrapWithOverflow" Margin="0,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="64" Width="793">The information gathered above are some of the many files/folders perpetrators can have access to if they decide to implement a phishing scheme that gives them access to a victims computer. These attacks can be fatal. Not only do phishing perpetrators have access to your data, but they also might have access to your device. Access to your device may lead to potential dangers such as perpetrators having access to your camera/microphones.</TextBlock>
+            <Border BorderBrush="Black" BorderThickness="2" Grid.RowSpan="5" Grid.ColumnSpan="3"></Border>
+            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="20" Opacity=".5">User ID</TextBlock>
+            <TextBox x:Name="Username" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="12,0,10,0"></TextBox>
+
+            <TextBlock Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="18" Opacity=".5">Password</TextBlock>
+            <PasswordBox x:Name="Password" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="12,0,10,0"></PasswordBox>
+
+            <TextBlock Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="18" Opacity=".5">Remember User ID</TextBlock>
+            <RadioButton Grid.Row="2" Grid.Column="2" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="34"></RadioButton>
+
+            <Button Grid.Row="3" Grid.ColumnSpan="3" VerticalAlignment="Center" Height="28" Margin="15,0,17,0" Background="#E18533" Foreground="White" Click="LOGIN_CLICK">LOG IN</Button>
+            <TextBlock Grid.Row="3" Grid.ColumnSpan="3" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="#236093">FORGOT YOUR USER ID OR PASSWORD?</TextBlock>
+        </Grid>
+        
     </Grid>
-</Window>
+</Page>
