@@ -9,6 +9,17 @@
       Title="PrivacyPoliciesPage">
 
     <Grid>
-        <TextBlock>Privacy Policy Page</TextBlock>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="1" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center">Privacy Policy Page</TextBlock>
+
+        <Border Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="327" Width="427" BorderThickness="2" BorderBrush="Black"/>
     </Grid>
 </Page>
