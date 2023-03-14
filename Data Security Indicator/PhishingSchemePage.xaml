@@ -20,6 +20,8 @@
             <RowDefinition Height="199*"></RowDefinition>
             <RowDefinition Height="242*"></RowDefinition>
         </Grid.RowDefinitions>
+        <Button VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click">Go To Next Part</Button>
+        
         <TextBlock Grid.Column="1" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Width="418">Dangers Of Low Security/Privacy Knowledge</TextBlock>
 
         <TextBlock Grid.Column="1" FontSize="20" FontWeight="Bold" Grid.Row="1" TextWrapping="Wrap" Margin="0,0,0,3">Phishing Scheme: Falling for phishing schemes is incredibly dangerous, as it may involve giving out sensitive information (social security number) or downloading viruses/malware that can give hackers access to your computer/information.</TextBlock>
