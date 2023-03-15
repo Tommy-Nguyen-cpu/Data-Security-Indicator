@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -13,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static Data_Security_Indicator.PhishingSchemePage;
 
 namespace Data_Security_Indicator
 {
@@ -21,101 +23,25 @@ namespace Data_Security_Indicator
     /// </summary>
     public partial class PrivacyPoliciesPage : Page
     {
-
-        public class PrivacyPolicyPage
+        public class Media
         {
-            //public string? Facebook { get; set; }
-            //public string? Amazon { get; set; }
-            //public string? TikTok { get; set; }
-            //public string? LinkedIn { get; set; }
-            //public string? Snapchat { get; set; }
-            //public string? Twitter { get; set; }
-            //public string? YouTube { get; set; }
-            //public string? Pinterest { get; set; }
+            public bool? Facebook{ get; set; }
+            public bool? Amazon{ get; set; }
+            public bool? TikTok { get; set; }
+            public bool? LinkedIn { get; set; }
+            public bool? Snapchat { get; set; }
+            public bool? Twitter { get; set; }
+            public bool? YouTube { get; set; }
+            public bool? Pinterest { get; set; }
         }
 
-        public PrivacyPoliciesPage()
+        public PrivacyPoliciesPage(bool facebook, bool amazon, bool tiktok, bool linkedin, bool snapchat, bool twitter, bool youtube, bool pinterest)
         {
             InitializeComponent();
+
+            DataContext = new Media() { };
         }
-
-        private void HandleCheck(object sender, RoutedEventArgs e)
-        {
-            CheckBox cb = sender as CheckBox;
-
-            if (cb.Name == "Facebook")
-            {
-
-            }
-            else
-            {
-
-            }
-
-            if (cb.Name == "Amazon")
-            {
-
-            }
-            else
-            {
-
-            }
-
-            if (cb.Name == "TikTok")
-            {
-
-            }
-            else
-            {
-
-            }
-
-            if (cb.Name == "LinkedIn")
-            {
-
-            }
-            else
-            {
-
-            }
-
-            if (cb.Name == "Snapchat")
-            {
-
-            }
-            else
-            {
-
-            }
-
-            if (cb.Name == "Twitter")
-            {
-
-            }
-            else
-            {
-
-            }
-
-            if (cb.Name == "YouTube")
-            {
-
-            }
-            else
-            {
-
-            }
-
-            if (cb.Name == "Pinterest")
-            {
-
-            }
-            else
-            {
-
-            }
-        }
-
+        
         private void Continue(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new PrivacyQuestionairePage());

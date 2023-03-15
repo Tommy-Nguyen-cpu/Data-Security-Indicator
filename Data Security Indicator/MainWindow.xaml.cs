@@ -24,7 +24,7 @@ namespace Data_Security_Indicator
         private Dictionary<string, string> pages = new Dictionary<string, string>{
             {"Phishing Scheme", "PhishingSchemePage.xaml" },
             {"Privacy Policies", "PrivacyPoliciesPage.xaml" },
-            {"Privacy Questionaire", "PrivacyQuestionairePage" }
+            {"Privacy Questionaire", "PrivacyQuestionairePage.xaml" }
         };
 
         //private NavigationWindow window = new NavigationWindow();
