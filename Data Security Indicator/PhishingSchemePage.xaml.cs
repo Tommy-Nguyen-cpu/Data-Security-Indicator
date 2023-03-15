@@ -34,5 +34,10 @@ namespace Data_Security_Indicator
 
             DataContext = new PhishingInfoExample() { Username = username, Password = password };
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new PrivacyPoliciesPage());
+        }
     }
 }
