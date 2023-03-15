@@ -1,10 +1,10 @@
 ﻿<Page x:Class="Data_Security_Indicator.PrivacyPoliciesPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:Data_Security_Indicator"
-      mc:Ignorable="d" 
+      mc:Ignorable="d"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PrivacyPoliciesPage">
 
@@ -20,6 +20,17 @@
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Column="1" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center">Privacy Policy Page</TextBlock>
 
-        <Border Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="327" Width="427" BorderThickness="2" BorderBrush="Black"/>
+        <Border Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="327" Width="427" BorderThickness="2" BorderBrush="Black">
+            <TextBlock FontWeight="Bold" HorizontalAlignment="Center" Margin="0,8,0,265" Width="407" TextWrapping="Wrap" FontSize="20" Text="Please Select Social Medias/ That You Use" TextAlignment="Center" VerticalAlignment="Top"/>
+        </Border>
+        <CheckBox Name="Facebook" Content="Facebook" Indeterminate="HandleThirdState" Checked="HandleUncheck" Unchecked="HandleUnchecked" Margin="10,103,10,277" Grid.Row="1" Grid.Column="1" />
+        <CheckBox Name="Amazon" Content="Amazon" Indeterminate="HandleThirdState" Checked="HandleUncheck" Unchecked="HandleUnchecked" Margin="10,123,10,257" Grid.Row="1" Grid.Column="1" />
+        <CheckBox Name="TikTok" Content="TikTok" Indeterminate="HandleThirdState" Checked="HandleUncheck" Unchecked="HandleUnchecked" Margin="10,143,10,237" Grid.Row="1" Grid.Column="1" />
+        <CheckBox Name="LinkedIn" Content="LinkedIn" Indeterminate="HandleThirdState" Checked="HandleUncheck" Unchecked="HandleUnchecked" Margin="10,163,10,217" Grid.Row="1" Grid.Column="1" />
+        <CheckBox Name="Snapchat" Content="Snapchat" Indeterminate="HandleThirdState" Checked="HandleUncheck" Unchecked="HandleUnchecked" Margin="10,183,10,197" Grid.Row="1" Grid.Column="1" />
+        <CheckBox Name="Twitter" Content="Twitter" Indeterminate="HandleThirdState" Checked="HandleUncheck" Unchecked="HandleUnchecked" Margin="10,203,10,177" Grid.Row="1" Grid.Column="1" />
+        <CheckBox Name="YouTube" Content="YouTube" Indeterminate="HandleThirdState" Checked="HandleUncheck" Unchecked="HandleUnchecked" Margin="10,223,10,157" Grid.Row="1" Grid.Column="1" />
+        <CheckBox Name="Pinterest" Content="Pinterest" Indeterminate="HandleThirdState" Checked="HandleUncheck" Unchecked="HandleUnchecked" Margin="10,243,10,137" Grid.Row="1" Grid.Column="1" />
+        <Button Click="Continue" Grid.Column="1" Margin="10,283,161,87" Grid.Row="1" Background="#FFE18533" Foreground="White">Continue</Button>
     </Grid>
 </Page>

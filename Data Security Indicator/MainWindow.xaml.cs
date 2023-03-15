@@ -23,7 +23,8 @@ namespace Data_Security_Indicator
 
         private Dictionary<string, string> pages = new Dictionary<string, string>{
             {"Phishing Scheme", "PhishingSchemePage.xaml" },
-            {"Privacy Policies", "PrivacyPoliciesPage.xaml" }
+            {"Privacy Policies", "PrivacyPoliciesPage.xaml" },
+            {"Privacy Questionaire", "PrivacyQuestionairePage" }
         };
 
         //private NavigationWindow window = new NavigationWindow();
@@ -31,9 +32,9 @@ namespace Data_Security_Indicator
         {
             InitializeComponent();
 
-/*            window.Source = new Uri("PhishingSchemePage.xaml", UriKind.Relative);
-            window.Show();*/
-            /*this.Content = new PhishingSchemePage();*/
+            /* window.Source = new Uri("PhishingSchemePage.xaml", UriKind.Relative);
+               window.Show();*/
+            /* this.Content = new PhishingSchemePage();*/
         }
 
         private void LOGIN_CLICK(object sender, RoutedEventArgs e)
