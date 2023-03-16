@@ -21,16 +21,29 @@
         <TextBlock Grid.Column="1" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center">Privacy Policy Page</TextBlock>
 
         <Border Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="327" Width="427" BorderThickness="2" BorderBrush="Black">
-            <TextBlock FontWeight="Bold" HorizontalAlignment="Center" Margin="0,8,0,265" Width="407" TextWrapping="Wrap" FontSize="20" Text="Please Select Social Medias/ That You Use" TextAlignment="Center" VerticalAlignment="Top"/>
         </Border>
-        <CheckBox Name="Facebook" Content="Facebook" IsChecked="{Binding Facebook}" Margin="10,103,10,277" Grid.Row="1" Grid.Column="1" />
-        <CheckBox Name="Amazon" Content="Amazon" IsChecked="{Binding Amazon}" Margin="10,123,10,257" Grid.Row="1" Grid.Column="1" />
-        <CheckBox Name="TikTok" Content="TikTok" IsChecked="{Binding TikTok}" Margin="10,143,10,237" Grid.Row="1" Grid.Column="1" />
-        <CheckBox Name="LinkedIn" Content="LinkedIn" IsChecked="{Binding LinkedIn}" Margin="10,163,10,217" Grid.Row="1" Grid.Column="1" />
-        <CheckBox Name="Snapchat" Content="Snapchat" IsChecked="{Binding Snapchat}" Margin="10,183,10,197" Grid.Row="1" Grid.Column="1" />
-        <CheckBox Name="Twitter" Content="Twitter" IsChecked="{Binding Twitter}" Margin="10,203,10,177" Grid.Row="1" Grid.Column="1" />
-        <CheckBox Name="YouTube" Content="YouTube" IsChecked="{Binding YouTube}" Margin="10,223,10,157" Grid.Row="1" Grid.Column="1" />
-        <CheckBox Name="Pinterest" Content="Pinterest" IsChecked="{Binding Pinterest}" Margin="10,243,10,137" Grid.Row="1" Grid.Column="1" />
-        <Button Click="Continue" Grid.Column="1" Margin="10,283,161,87" Grid.Row="1" Background="#FFE18533" Foreground="White">Continue</Button>
+        <Grid Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="327" Width="427">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontWeight="Bold" HorizontalAlignment="Center" Width="407" TextWrapping="Wrap" FontSize="20" Text="Please Select Social Medias/ That You Use" TextAlignment="Center" VerticalAlignment="Top"/>
+            <CheckBox Name="Facebook" Content="Facebook" IsChecked="{Binding Facebook}" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" />
+            <CheckBox Name="Amazon" Content="Amazon" IsChecked="{Binding Amazon}" VerticalAlignment="Top" Grid.Row="0" Grid.ColumnSpan="3" Margin="142,51,142,0" />
+            <CheckBox Name="TikTok" Content="TikTok" IsChecked="{Binding TikTok}" Grid.Row="1" VerticalAlignment="Top" Grid.Column="1" />
+            <CheckBox Name="LinkedIn" Content="LinkedIn" IsChecked="{Binding LinkedIn}" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="1" />
+            <CheckBox Name="Snapchat" Content="Snapchat" IsChecked="{Binding Snapchat}" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1" />
+            <CheckBox Name="Twitter" Content="Twitter" IsChecked="{Binding Twitter}" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" />
+            <CheckBox Name="YouTube" Content="YouTube" IsChecked="{Binding YouTube}" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="3" Margin="142,29,142,0" />
+            <CheckBox Name="Pinterest" Content="Pinterest" IsChecked="{Binding Pinterest}" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="1" />
+            <Button Click="Continue" Grid.Column="1" Grid.Row="3" Background="#FFE18533" Foreground="White">Continue</Button>
+        </Grid>
     </Grid>
 </Page>
