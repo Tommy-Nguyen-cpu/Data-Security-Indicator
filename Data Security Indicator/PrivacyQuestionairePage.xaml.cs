@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -24,11 +23,6 @@ namespace Data_Security_Indicator
         public PrivacyQuestionairePage()
         {
             InitializeComponent();
-        }
-
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
         }
     }
 }
