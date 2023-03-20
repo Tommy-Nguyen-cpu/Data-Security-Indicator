@@ -24,18 +24,6 @@ namespace Data_Security_Indicator
     public partial class PrivacyPoliciesPage : Page
     {
 
-        // TODO: Replace "new Page()" with the specific page created (i.e. "new AmazonQAPage()", etc).
-        Dictionary<App.Websites, Page> QAndA = new Dictionary<App.Websites, Page> {
-            {App.Websites.FACEBOOK, new FacebookQAPage() },
-            {App.Websites.AMAZON, new Page() },
-            {App.Websites.TIKTOK, new Page() },
-            {App.Websites.LINKEDIN, new Page() },
-            {App.Websites.SNAPCHAT, new Page() },
-            {App.Websites.TWITTER, new Page() },
-            {App.Websites.YOUTUBE, new Page() },
-            {App.Websites.PINTEREST, new Page() }
-        };
-
         public PrivacyPoliciesPage()
         {
             InitializeComponent();
@@ -58,7 +46,9 @@ namespace Data_Security_Indicator
                 System.Diagnostics.Debug.WriteLine("Site picked: " + site);
             }
 
-            this.NavigationService.Navigate(new FacebookQAPage());
+            // TODO: navigate to the first page on the list
+
+            this.NavigationService.Navigate(App.QAndA[App.sites.FirstOrDefault()]);
         }
     }
 }
