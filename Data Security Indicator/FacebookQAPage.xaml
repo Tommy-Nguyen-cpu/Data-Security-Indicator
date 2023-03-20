@@ -1,4 +1,4 @@
-﻿<Page x:Class="Data_Security_Indicator.PrivacyQuestionairePage"
+﻿<Page x:Class="Data_Security_Indicator.FacebookQAPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Data_Security_Indicator"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PrivacyQuestionairePage">
+      Title="FacebookQAPage">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -14,5 +14,12 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Column="1" FontSize="50" FontWeight="Bold" HorizontalAlignment="Center">Facebook</TextBlock>
     </Grid>
 </Page>

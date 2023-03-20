@@ -23,28 +23,33 @@ namespace Data_Security_Indicator
     /// </summary>
     public partial class PrivacyPoliciesPage : Page
     {
-        public class Media
-        {
-            public bool? Facebook{ get; set; }
-            public bool? Amazon{ get; set; }
-            public bool? TikTok { get; set; }
-            public bool? LinkedIn { get; set; }
-            public bool? Snapchat { get; set; }
-            public bool? Twitter { get; set; }
-            public bool? YouTube { get; set; }
-            public bool? Pinterest { get; set; }
-        }
 
         public PrivacyPoliciesPage()
         {
             InitializeComponent();
-
-            DataContext = new Media() { };
         }
         
         private void Continue(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new PrivacyQuestionairePage(Facebook.IsChecked.Value, Amazon.IsChecked.Value, TikTok.IsChecked.Value, LinkedIn.IsChecked.Value, Snapchat.IsChecked.Value, Twitter.IsChecked.Value, YouTube.IsChecked.Value, Pinterest.IsChecked.Value));
+            List<bool> sitesPicked = new List<bool> { Facebook.IsChecked.Value, Amazon.IsChecked.Value, TikTok.IsChecked.Value, LinkedIn.IsChecked.Value, Snapchat.IsChecked.Value, Twitter.IsChecked.Value, YouTube.IsChecked.Value, Pinterest.IsChecked.Value };
+
+
+            List<PrivacyQuestionairePage.Websites> sitesUsedByUser = new List<PrivacyQuestionairePage.Websites>();
+
+            for(int i = 0; i < sitesPicked.Count; i++)
+            {
+                if (sitesPicked[i])
+                {
+                    sitesUsedByUser.Add((PrivacyQuestionairePage.Websites)i);
+                }
+            }
+
+            foreach(var site in sitesUsedByUser)
+            {
+                System.Diagnostics.Debug.WriteLine("Site picked: " + site);
+            }
+
+            this.NavigationService.Navigate(new PrivacyQuestionairePage(sitesUsedByUser));
         }
     }
 }

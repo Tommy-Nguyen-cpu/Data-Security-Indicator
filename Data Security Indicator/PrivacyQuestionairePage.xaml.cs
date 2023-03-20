@@ -20,9 +20,29 @@ namespace Data_Security_Indicator
     /// </summary>
     public partial class PrivacyQuestionairePage : Page
     {
-        public PrivacyQuestionairePage(bool facebook, bool amazon, bool tiktok, bool linkedin, bool snapchat, bool twitter, bool youtube, bool pinterest)
+
+        public enum Websites
+        {
+            FACEBOOK, AMAZON, TIKTOK, LINKEDIN, SNAPCHAT, TWITTER, YOUTUBE, PINTEREST
+        }
+
+        // TODO: Replace "new Page()" with the specific page created (i.e. "new AmazonQAPage()", etc).
+        Dictionary<Websites, Page> QAndA = new Dictionary<Websites, Page> {
+            {Websites.FACEBOOK, new FacebookQAPage() },
+            {Websites.AMAZON, new Page() },
+            {Websites.TIKTOK, new Page() },
+            {Websites.LINKEDIN, new Page() },
+            {Websites.SNAPCHAT, new Page() },
+            {Websites.TWITTER, new Page() },
+            {Websites.YOUTUBE, new Page() },
+            {Websites.PINTEREST, new Page() }
+        };
+
+
+        public PrivacyQuestionairePage(List<Websites> sitesUsed)
         {
             InitializeComponent();
+
         }
     }
 }
