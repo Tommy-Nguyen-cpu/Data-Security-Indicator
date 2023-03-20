@@ -13,12 +13,13 @@ namespace Data_Security_Indicator
     /// Interaction logic for App.xaml
     /// </summary>
 
-    public enum Websites
-    {
-        FACEBOOK, AMAZON, TIKTOK, LINKEDIN, SNAPCHAT, TWITTER, YOUTUBE, PINTEREST
-    }
     public partial class App : Application
     {
+        public enum Websites
+        {
+            FACEBOOK, AMAZON, TIKTOK, LINKEDIN, SNAPCHAT, TWITTER, YOUTUBE, PINTEREST
+        }
         public static List<Websites> sites= new List<Websites>();
+
     }
 }
