@@ -35,15 +35,15 @@
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontWeight="Bold" HorizontalAlignment="Center" Width="407" TextWrapping="Wrap" FontSize="20" Text="Please Select Social Medias/ That You Use" TextAlignment="Center" VerticalAlignment="Top"/>
-            <CheckBox Name="Facebook" Content="Facebook" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" />
-            <CheckBox Name="Amazon" Content="Amazon" VerticalAlignment="Top" Grid.Row="0" Grid.ColumnSpan="3" Margin="142,51,142,0" />
-            <CheckBox Name="TikTok" Content="TikTok" Grid.Row="1" VerticalAlignment="Top" Grid.Column="1" />
-            <CheckBox Name="LinkedIn" Content="LinkedIn" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="1" />
-            <CheckBox Name="Snapchat" Content="Snapchat" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1" />
-            <CheckBox Name="Twitter" Content="Twitter" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" />
-            <CheckBox Name="YouTube" Content="YouTube" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="3" Margin="142,29,142,0" />
-            <CheckBox Name="Pinterest" Content="Pinterest" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="1" />
-            <Button Click="Continue" Grid.Column="1" Grid.Row="3" Background="#FFE18533" Foreground="White">Continue</Button>
+            <CheckBox Name="Facebook" Content="Facebook" VerticalAlignment="Top" Grid.Row="0" Grid.ColumnSpan="3" Margin="142,32,142,0" />
+            <CheckBox Name="Amazon" Content="Amazon" VerticalAlignment="Top" Grid.Row="0" Grid.ColumnSpan="3" Margin="142,52,142,0" />
+            <CheckBox Name="TikTok" Content="TikTok" VerticalAlignment="Top" Grid.ColumnSpan="3" Margin="142,72,142,0" Grid.RowSpan="2" />
+            <CheckBox Name="LinkedIn" Content="LinkedIn" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="3" Margin="142,30,142,0" />
+            <CheckBox Name="Snapchat" Content="Snapchat" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="2" Margin="142,50,1,0" />
+            <CheckBox Name="Twitter" Content="Twitter" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="2" Margin="142,70,1,0" Grid.RowSpan="2" />
+            <CheckBox Name="YouTube" Content="YouTube" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="3" Margin="142,10,142,0" />
+            <CheckBox Name="Pinterest" Content="Pinterest" VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="2" Margin="142,8,2,0" />
+            <Button Click="Continue" Grid.Row="2" Background="#FFE18533" Foreground="White" Grid.ColumnSpan="3" Margin="142,40,142,41" Grid.RowSpan="2">Continue</Button>
         </Grid>
     </Grid>
 </Page>
