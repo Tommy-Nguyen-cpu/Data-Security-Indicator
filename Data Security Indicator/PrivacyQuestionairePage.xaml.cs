@@ -20,7 +20,7 @@ namespace Data_Security_Indicator
     /// </summary>
     public partial class PrivacyQuestionairePage : Page
     {
-        public PrivacyQuestionairePage()
+        public PrivacyQuestionairePage(bool facebook, bool amazon, bool tiktok, bool linkedin, bool snapchat, bool twitter, bool youtube, bool pinterest)
         {
             InitializeComponent();
         }

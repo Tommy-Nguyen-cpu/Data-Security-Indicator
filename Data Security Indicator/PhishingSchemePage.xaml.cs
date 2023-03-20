@@ -37,7 +37,7 @@ namespace Data_Security_Indicator
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new PrivacyPoliciesPage(false, false, false, false, false, false, false, false));
+            this.NavigationService.Navigate(new PrivacyPoliciesPage());
         }
     }
 }

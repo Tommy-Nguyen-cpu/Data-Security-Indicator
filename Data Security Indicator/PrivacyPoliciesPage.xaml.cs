@@ -35,7 +35,7 @@ namespace Data_Security_Indicator
             public bool? Pinterest { get; set; }
         }
 
-        public PrivacyPoliciesPage(bool facebook, bool amazon, bool tiktok, bool linkedin, bool snapchat, bool twitter, bool youtube, bool pinterest)
+        public PrivacyPoliciesPage()
         {
             InitializeComponent();
 
@@ -44,7 +44,7 @@ namespace Data_Security_Indicator
         
         private void Continue(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new PrivacyQuestionairePage());
+            this.NavigationService.Navigate(new PrivacyQuestionairePage(Facebook.IsChecked.Value, Amazon.IsChecked.Value, TikTok.IsChecked.Value, LinkedIn.IsChecked.Value, Snapchat.IsChecked.Value, Twitter.IsChecked.Value, YouTube.IsChecked.Value, Pinterest.IsChecked.Value));
         }
     }
 }
