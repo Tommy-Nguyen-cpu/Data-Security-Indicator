@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -17,13 +16,13 @@ using System.Windows.Shapes;
 namespace Data_Security_Indicator
 {
     /// <summary>
-    /// Interaction logic for FacebookQAPage.xaml
+    /// Interaction logic for PinterestQAPage.xaml
     /// </summary>
-    public partial class FacebookQAPage : Page
+    public partial class PinterestQAPage : Page
     {
-        public FacebookQAPage()
+        public PinterestQAPage()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
         private void Continue(object sender, RoutedEventArgs e)

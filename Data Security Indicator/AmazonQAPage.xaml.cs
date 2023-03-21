@@ -17,23 +17,20 @@ using System.Windows.Shapes;
 namespace Data_Security_Indicator
 {
     /// <summary>
-    /// Interaction logic for FacebookQAPage.xaml
+    /// Interaction logic for AmazonQAPage.xaml
     /// </summary>
-    public partial class FacebookQAPage : Page
+    public partial class AmazonQAPage : Page
     {
-        public FacebookQAPage()
+        public AmazonQAPage()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
-
+        
         private void Continue(object sender, RoutedEventArgs e)
         {
-            if (App.sites.Any())
-            {
-                App.sites.RemoveAt(0);
-                System.Diagnostics.Debug.WriteLine("next is: " + App.sites.FirstOrDefault());
-                this.NavigationService.Navigate(App.QAndA[App.sites.First()]);
-            }
+            App.sites.RemoveAt(0);
+            System.Diagnostics.Debug.WriteLine("next is: " + App.sites.FirstOrDefault());
+            this.NavigationService.Navigate(App.QAndA[App.sites.First()]);
         }
     }
 }

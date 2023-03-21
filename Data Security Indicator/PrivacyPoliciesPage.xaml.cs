@@ -48,7 +48,7 @@ namespace Data_Security_Indicator
 
             // TODO: navigate to the first page on the list
 
-            this.NavigationService.Navigate(App.QAndA[App.sites.FirstOrDefault()]);
+            this.NavigationService.Navigate(App.QAndA[App.sites.First()]);
         }
     }
 }

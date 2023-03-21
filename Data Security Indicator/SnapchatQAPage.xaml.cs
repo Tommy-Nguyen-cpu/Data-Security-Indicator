@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -17,13 +16,13 @@ using System.Windows.Shapes;
 namespace Data_Security_Indicator
 {
     /// <summary>
-    /// Interaction logic for FacebookQAPage.xaml
+    /// Interaction logic for SnapchatQAPage.xaml
     /// </summary>
-    public partial class FacebookQAPage : Page
+    public partial class SnapchatQAPage : Page
     {
-        public FacebookQAPage()
+        public SnapchatQAPage()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
         private void Continue(object sender, RoutedEventArgs e)
@@ -32,7 +31,7 @@ namespace Data_Security_Indicator
             {
                 App.sites.RemoveAt(0);
                 System.Diagnostics.Debug.WriteLine("next is: " + App.sites.FirstOrDefault());
-                this.NavigationService.Navigate(App.QAndA[App.sites.First()]);
+                this.NavigationService.Navigate(App.QAndA[App.sites.FirstOrDefault()]);
             }
         }
     }
