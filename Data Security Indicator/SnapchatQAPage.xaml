@@ -11,22 +11,37 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="150*"></RowDefinition>
-            <RowDefinition Height="200*"></RowDefinition>
-            <RowDefinition Height="100*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="50*"></RowDefinition>
+            <RowDefinition Height="50*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="141*"></ColumnDefinition>
-            <ColumnDefinition Width="520*"></ColumnDefinition>
-            <ColumnDefinition Width="141*"></ColumnDefinition>
+            <ColumnDefinition Width="100*"></ColumnDefinition>
+            <ColumnDefinition Width="150*"></ColumnDefinition>
+            <ColumnDefinition Width="150*"></ColumnDefinition>
+            <ColumnDefinition Width="150*"></ColumnDefinition>
+            <ColumnDefinition Width="100*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Grid.Column="1" FontSize="50" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Height="67" Width="222">Snapchat</TextBlock>
-        <TextBlock Grid.Column="1" Grid.Row="0" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="WrapWithOverflow" TextAlignment="Center" Margin="0,67,0,0" Height="80" Width="300" >Select all of the following which are true:</TextBlock>
-        <CheckBox Name="QA1" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Snapchat can edit and distribute your content through any media known now or that may exist in the future." Margin="0,10,0,0"></CheckBox>
-        <CheckBox Name="QA2" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Snapchat does not hold onto your content that you have deleted." Margin="0,35,0,0"></CheckBox>
-        <CheckBox Name="QA3" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Your personal data is not given to third parties that worked for Snapchat." Margin="0,60,0,0"></CheckBox>
-        <CheckBox Name="QA4" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Snapchat may not only collect your location data, but they can also use it and share it." Margin="0,85,0,0"></CheckBox>
-        <CheckBox Name="QA5" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Snapchat cannot share your personal data with third parties that are not involved in its operation." Margin="0,110,0,0"></CheckBox>
-        <Button Click="Continue" Grid.Column="1" Grid.Row="1" Background="#FFE18533" Foreground="White" Margin="10,135,319,10">Continue</Button>
+        <TextBlock Grid.Column="1" Grid.ColumnSpan="3" FontSize="50" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Height="67" Width="222">Snapchat</TextBlock>
+        <TextBlock Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextWrapping="WrapWithOverflow" TextAlignment="Center" Height="80" Width="300" >Select all of the following which are true:</TextBlock>
+        <CheckBox Name="QA1" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Snapchat can edit and distribute your content through any media known now or that may exist in the future."></CheckBox>
+        <CheckBox Name="QA2" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Snapchat does not hold onto your content that you have deleted."></CheckBox>
+        <CheckBox Name="QA3" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Your personal data is not given to third parties that worked for Snapchat."></CheckBox>
+        <CheckBox Name="QA4" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Snapchat may not only collect your location data, but they can also use it and share it."></CheckBox>
+        <CheckBox Name="QA5" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Snapchat cannot share your personal data with third parties that are not involved in its operation."></CheckBox>
+
+        <TextBlock Name="QA1ans" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Left" FontSize="15" Height="20" Width="150"></TextBlock>
+        <TextBlock Name="QA2ans" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Left" FontSize="15" Height="20" Width="150"></TextBlock>
+        <TextBlock Name="QA3ans" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Left" FontSize="15" Height="20" Width="150"></TextBlock>
+        <TextBlock Name="QA4ans" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Left" FontSize="15" Height="20" Width="150"></TextBlock>
+        <TextBlock Name="QA5ans" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Left" FontSize="15" Height="20" Width="150"></TextBlock>
+
+        <Button Click="Continue" Grid.Column="3" Grid.Row="6" Background="#FFE18533" Foreground="White">Continue</Button>
+        <Button Click="Check" Grid.Column="1" Grid.Row="6" Background="#FFE18533" Foreground="White">Check</Button>
     </Grid>
 </Page>

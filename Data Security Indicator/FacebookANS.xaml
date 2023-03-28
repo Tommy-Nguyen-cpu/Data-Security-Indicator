@@ -1,0 +1,38 @@
+﻿<Window x:Class="Data_Security_Indicator.FacebookANS"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Data_Security_Indicator"
+        mc:Ignorable="d"
+        Title="FacebookANS" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Facebook stores your data whether you have an account or not.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Your identity is used in ads that are shown to others.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">When you delete content on Facebook, it is gone forever</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Facebook does not infringe upon/analyze your private messages.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Facebook can view your browser history.</TextBlock>
+
+        <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"Facebook uses cookies and receives information when you visit those sites and apps, including device information and information about your activity, without any further action from you. This occurs whether or not you have a Facebook account or are logged in."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"You give us permission to use your name and profile picture and information about actions you have taken on Facebook next to or in connection with ads, offers, and other sponsored content that we display across our Products, without any compensation to you."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"In addition, content you delete may continue to appear if you have shared it with others and they have not deleted it."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"Our systems automatically process content and communications you and others provide to analyze context and what's in them for the purposes described below [...]."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Bottom" TextWrapping="Wrap">"You can review your Off-Facebook activity, which is a summary of activity that businesses and organizations share with us about your interactions with them, such as visiting their apps or websites. They use our Business Tools, like Facebook Pixel, to share this information with us. This helps us do things like give you a more personalized experience on Facebook."</TextBlock>
+    </Grid>
+</Window>

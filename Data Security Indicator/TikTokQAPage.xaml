@@ -11,22 +11,37 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="150*"></RowDefinition>
-            <RowDefinition Height="200*"></RowDefinition>
-            <RowDefinition Height="100*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="50*"></RowDefinition>
+            <RowDefinition Height="50*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="141*"></ColumnDefinition>
-            <ColumnDefinition Width="520*"></ColumnDefinition>
-            <ColumnDefinition Width="141*"></ColumnDefinition>
+            <ColumnDefinition Width="100*"></ColumnDefinition>
+            <ColumnDefinition Width="150*"></ColumnDefinition>
+            <ColumnDefinition Width="150*"></ColumnDefinition>
+            <ColumnDefinition Width="150*"></ColumnDefinition>
+            <ColumnDefinition Width="100*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Grid.Column="1" FontSize="50" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Height="67" Width="222">TikTok</TextBlock>
-        <TextBlock Grid.Column="1" Grid.Row="0" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="WrapWithOverflow" TextAlignment="Center" Margin="0,67,0,0" Height="80" Width="300" >Select all of the following which are true:</TextBlock>
-        <CheckBox Name="QA1" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Private messages cannot be read by the service." Margin="0,10,0,0"></CheckBox>
-        <CheckBox Name="QA2" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Your content can be deleted at any time without prior notice for any reason." Margin="0,35,0,0"></CheckBox>
-        <CheckBox Name="QA3" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Information such as age, username/password, email, phone number can be collected by TikTok." Margin="0,60,0,0"></CheckBox>
-        <CheckBox Name="QA4" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Data on your content is collected at the time of creation, regardless of if you choose to upload or save it." Margin="0,85,0,0"></CheckBox>
-        <CheckBox Name="QA5" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Some browsers transmit &quot;do-not-track&quot; signals to websites. TikTok ignores these." Margin="0,110,0,0"></CheckBox>
-        <Button Click="Continue" Grid.Column="1" Grid.Row="1" Background="#FFE18533" Foreground="White" Margin="10,135,319,10">Continue</Button>
+        <TextBlock Grid.Column="1" Grid.ColumnSpan="3" FontSize="50" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" TextAlignment="Center" Height="67" Width="222">TikTok</TextBlock>
+        <TextBlock Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextWrapping="WrapWithOverflow" TextAlignment="Center" Height="80" Width="300">Select all of the following which are true:</TextBlock>
+        <CheckBox Name="QA1" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="750" Content="Private messages can not be read by the service."></CheckBox>
+        <CheckBox Name="QA2" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="750" Content="Your content can be deleted at any time without prior notice for any reason."></CheckBox>
+        <CheckBox Name="QA3" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="750" Content="Information such as age, username/password, email, phone number can be collected by TikTok."></CheckBox>
+        <CheckBox Name="QA4" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="750" Content="Data on your content is collected at the time of creation, regardless of if you choose to upload or save it."></CheckBox>
+        <CheckBox Name="QA5" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="750" Content="Some browsers transmit “do-not-track” signals to websites. TikTok ignores these."></CheckBox>
+        
+        <TextBlock Name="QA1ans" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Left" FontSize="15" Height="20" Width="150"></TextBlock>
+        <TextBlock Name="QA2ans" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Left" FontSize="15" Height="20" Width="150"></TextBlock>
+        <TextBlock Name="QA3ans" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Left" FontSize="15" Height="20" Width="150"></TextBlock>
+        <TextBlock Name="QA4ans" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Left" FontSize="15" Height="20" Width="150"></TextBlock>
+        <TextBlock Name="QA5ans" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Left" FontSize="15" Height="20" Width="150"></TextBlock>
+
+        <Button Click="Continue" Grid.Column="3" Grid.Row="6" Background="#FFE18533" Foreground="White">Continue</Button>
+        <Button Click="Check" Grid.Column="1" Grid.Row="6" Background="#FFE18533" Foreground="White">Check</Button>
     </Grid>
 </Page>

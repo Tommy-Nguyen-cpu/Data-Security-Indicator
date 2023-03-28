@@ -1,0 +1,38 @@
+﻿<Window x:Class="Data_Security_Indicator.SnapchatANS"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Data_Security_Indicator"
+        mc:Ignorable="d"
+        Title="SnapchatANS" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Snapchat can edit and distribute your content through any media known now or that may exist in the future.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Snapchat does not hold onto content that you have deleted.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Your personal data is not given to third parties that work for Snapchat.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Snapchat may not only collect your location data, but they can also use it and share it.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Snapchat can not share your personal data with third parties that are not involved in its operation.</TextBlock>
+
+        <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Bottom" TextWrapping="Wrap">"You grant Snap and its affiliates  a license to archive, copy, cache, encode, store, reproduce, record, sell, sublicense, distribute, transmit, broadcast, synchronize, adapt, edit, modify, publicly display, publicly perform, publish, republish, promote, exhibit, create derivative works based upon, and otherwise use the Asset on or in connection with the Services and the advertising, marketing, and promotion thereof, in all formats, on or through any means or media now known or hereafter developed, and with any technology or devices now known or hereafter developed."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"After a Snap is deleted, we'll mainly be able to see the basic details — like when it was sent and who it was sent to."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"We may share information about you with business partners that provide services and functionality on our services."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"[...] to provide and improve our advertising services, ad targeting, and ad measurement, including through the use of your precise location information (again, if you've given us permission to collect that information)."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"We may let other companies use cookies on our services. These companies may collect information about how you use our services over time and combine it with similar information from other services and companies."</TextBlock>
+    </Grid>
+</Window>

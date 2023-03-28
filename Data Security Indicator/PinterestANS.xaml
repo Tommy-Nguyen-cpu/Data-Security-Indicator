@@ -1,0 +1,38 @@
+﻿<Window x:Class="Data_Security_Indicator.PinterestANS"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Data_Security_Indicator"
+        mc:Ignorable="d"
+        Title="PinterestANS" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Pinterest does not retain Content that has been removed.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Pinterest does not track your location when you choose not to share your precise location.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Pinterest does not transfer or store data outside of your country.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Content you post is available to the public.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Pinterest does not receive your information from outside of Pinterest.</TextBlock>
+
+        <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Bottom" TextWrapping="Wrap">"Following termination or deactivation of your account, or if you remove any User Content from Pinterest, we may keep your User Content for a reasonable period of time for backup, archival, or audit purposes. Pinterest and its users may retain and continue to use, store, display, reproduce, re-pin, modify, create derivative works, perform, and distribute any of your User Content that other users have stored or shared on Pinterest."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"We will still use your IP address, which is used to approximate your location, even if you don't choose to share your precise location."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"By using our products or services, you authorize us to transfer and store your information outside your home country, including in the United States, for the purposes described in this policy."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"Anyone can see the public boards and Pins you create and profile information you give us. We also make this public information available through what are called APIs (basically a technical way to share information quickly)."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"We also get information about you and your activity outside Pinterest from our affiliates, advertisers, partners and other third parties we work with."</TextBlock>
+    </Grid>
+</Window>

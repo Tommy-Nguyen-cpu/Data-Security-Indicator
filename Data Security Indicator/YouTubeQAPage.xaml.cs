@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,19 +21,68 @@ namespace Data_Security_Indicator
     /// </summary>
     public partial class YouTubeQAPage : Page
     {
+        public String QA1Out { get; set; }
+        public class test
+        {
+            public String? QA1Out { get; set; }
+        }
+
         public YouTubeQAPage()
         {
-            InitializeComponent();
+            InitializeComponent();          
         }
 
         private void Continue(object sender, RoutedEventArgs e)
         {
-            if (App.sites.Any())
+            if (App.sites.Count == 0)
             {
                 App.sites.RemoveAt(0);
                 System.Diagnostics.Debug.WriteLine("next is: " + App.sites.FirstOrDefault());
                 this.NavigationService.Navigate(App.QAndA[App.sites.First()]);
             }
         }
+        private void Check(object sender, RoutedEventArgs e)
+        {
+            QA1ans.Text = "TRUE";
+            QA2ans.Text = "TRUE";
+            QA3ans.Text = "TRUE";
+            QA4ans.Text = "TRUE";
+
+            if ((bool)QA1.IsChecked)
+            {
+                QA1.Foreground = Brushes.Blue;
+            }
+            else
+            {
+                QA1.Foreground = Brushes.Red;
+            }
+            if ((bool)QA2.IsChecked)
+            {
+                QA2.Foreground = Brushes.Blue;
+            }
+            else
+            {
+                QA2.Foreground = Brushes.Red;
+            }
+            if ((bool)QA3.IsChecked)
+            {
+                QA3.Foreground = Brushes.Blue;
+            }
+            else
+            {
+                QA3.Foreground = Brushes.Red;
+            }
+            if ((bool)QA4.IsChecked)
+            {
+                QA4.Foreground = Brushes.Blue;
+            }
+            else
+            {
+                QA4.Foreground = Brushes.Red;
+            }
+            YouTubeANS YouTube = new YouTubeANS();
+            YouTube.Show();
+        }
+
     }
 }

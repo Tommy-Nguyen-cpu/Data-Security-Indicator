@@ -1,0 +1,38 @@
+﻿<Window x:Class="Data_Security_Indicator.LinkedInANS"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Data_Security_Indicator"
+        mc:Ignorable="d"
+        Title="LinkedInANS" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">LinkedIn stores data on you even if you did not interact with the service.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">The LinkedIn mobile app can scan both your contacts and your calendar.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Your identity can not be used in ads that are shown to other users.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Your private messages cannot be scanned or read by the service.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Specific content can be removed without reason or notice.</TextBlock>
+
+        <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"We receive personal data (including contact information) about you when others import or sync their contacts or calendar with our Services, associate their contacts with Member profiles, scan and upload business cards, or send messages using our Services."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Bottom" TextWrapping="Wrap">"If you opt to import your address book, we receive your contacts (including contact information your service provider(s) or app automatically added to your address book when you communicated with addresses or numbers not already in your list). If you sync your contacts or calendars with our Services, we will collect your address book and calendar meeting information to keep growing your network."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Bottom" TextWrapping="Wrap">"We have the right, without payment to you or others, to serve ads near your content and information, and your social actions (e.g. likes, comments, follows, shares may be visible and included with ads, as noted in the Privacy Policy). If you use a Service feature, we may mention that with your name or photo to promote that feature within our Services, subject to your settings."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"We also use automatic scanning technology on messages to support and protect our site. For example, we use this technology to suggest possible responses to messages and to manage or block content that violates our User Agreement or Professional Community Policies from our Services."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"We are not obligated to publish any information or content on our service and can remove it with or without notice."</TextBlock>
+    </Grid>
+</Window>

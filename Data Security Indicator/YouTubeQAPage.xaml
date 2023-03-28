@@ -10,22 +10,51 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="150*"></RowDefinition>
-            <RowDefinition Height="200*"></RowDefinition>
-            <RowDefinition Height="100*"></RowDefinition>
+            <RowDefinition Height="140"></RowDefinition>
+            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="141*"></ColumnDefinition>
-            <ColumnDefinition Width="520*"></ColumnDefinition>
-            <ColumnDefinition Width="141*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Grid.Column="1" FontSize="50" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Height="67" Width="222">YouTube</TextBlock>
-        <TextBlock Grid.Column="1" Grid.Row="0" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="WrapWithOverflow" TextAlignment="Center" Margin="0,67,0,0" Height="80" Width="300" >Select all of the following which are true:</TextBlock>
-        <CheckBox Name="QA1" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Youtube may retain your content after you remove it." Margin="0,10,0,0"></CheckBox>
-        <CheckBox Name="QA2" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Youtube is able to use and modify your content to their discretion." Margin="0,35,0,0"></CheckBox>
-        <CheckBox Name="QA3" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="Google (parent company) services may obtain and store location information from the device you're using." Margin="0,60,0,0"></CheckBox>
-        <CheckBox Name="QA4" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="500" Content="The service can relocate your data to outside of your country." Margin="0,85,0,0"></CheckBox>
-        <Button Click="Continue" Grid.Column="1" Grid.Row="1" Background="#FFE18533" Foreground="White" Margin="10,135,319,10">Continue</Button>
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="50" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Height="67" Width="222">YouTube</TextBlock>
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextWrapping="WrapWithOverflow" TextAlignment="Center" Height="80" Width="300" >Select all of the following which are true:</TextBlock>
+
+        <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="320" Width="800">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition ></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <CheckBox Name="QA1" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="730">
+                <TextBlock Text="Youtube may retain your content after you remove it." TextWrapping="Wrap"/>
+            </CheckBox>
+            <CheckBox Name="QA2" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="730">
+                <TextBlock Text="Youtube is able to use and modify your content to their discretion." TextWrapping="Wrap"/>
+            </CheckBox>
+            <CheckBox Name="QA3" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="730">
+                <TextBlock Text="Google (parent company) services may obtain and store location information from the device you're using." TextWrapping="Wrap"/>    
+            </CheckBox>
+            <CheckBox Name="QA4" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="15" Height="20" Width="730">
+                <TextBlock Text="The service can relocate your data to outside of your country." TextWrapping="Wrap"/>
+            </CheckBox>
+            
+            <Button Click="Check" Grid.Column="0" Grid.Row="5" Background="#FFE18533" Foreground="White" Width="100" Height="50">Check</Button>
+            <Button Click="Continue" Grid.Column="2" Grid.Row="5" Background="#FFE18533" Foreground="White" Width="100" Height="50">Continue</Button>
+
+            <TextBlock Name="QA1ans" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Left" FontSize="15" Height="20" Width="500"></TextBlock>
+            <TextBlock Name="QA2ans" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Left" FontSize="15" Height="20" Width="500"></TextBlock>
+            <TextBlock Name="QA3ans" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Left" FontSize="15" Height="20" Width="500"></TextBlock>
+            <TextBlock Name="QA4ans" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Left" FontSize="15" Height="20" Width="500"></TextBlock>
+        </Grid>
     </Grid>
 </Page>

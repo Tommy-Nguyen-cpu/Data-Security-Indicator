@@ -1,0 +1,38 @@
+﻿<Window x:Class="Data_Security_Indicator.TikTokANS"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Data_Security_Indicator"
+        mc:Ignorable="d"
+        Title="TikTokANS" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Private messages can not be read by the service.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Your content can be deleted at any time without prior notice for any reason.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Information such as age, username/password, email, phone number can be collected by TikTok.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Data on your content is collected at the time of creation, regardless of if you choose to upload or save it.</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextDecorations="Underline">Some browsers transmit “do-not-track” signals to websites. TikTok ignores these.</TextBlock>
+
+        <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Bottom" TextWrapping="Wrap">"Messages: We collect and process, which includes scanning and analyzing, information you provide when you compose, send, or receive messages through the Platform's messaging functionality. That information includes the content of the message and information about when the message has been sent, received and/or read, as well as the participants of the communication."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"We reserve the right, at any time and without prior notice, to remove or disable access to content at our discretion for any reason or no reason."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Bottom" TextWrapping="Wrap">"Information, such as age, username and password, language, and email or phone number. Profile information, such as name, social media account information, and profile image. User-generated content, including comments, photographs, live streams, audio recordings, videos, and virtual item videos that you choose to create with or upload to the Platform."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"We collect User Content through pre-loading at the time of creation, import, or upload, regardless of whether you choose to save or upload that User Content, in order to recommend audio options and provide other personalized recommendations."</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="3" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">"Some browsers transmit “do-not-track” signals to websites. Because of differences in how browsers incorporate and activate this feature, we currently do not take action in response to these signals."</TextBlock>
+    </Grid>
+</Window>

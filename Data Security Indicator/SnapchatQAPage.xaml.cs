@@ -27,12 +27,64 @@ namespace Data_Security_Indicator
 
         private void Continue(object sender, RoutedEventArgs e)
         {
-            if (App.sites.Any())
+            if (App.sites.Count == 0)
             {
                 App.sites.RemoveAt(0);
                 System.Diagnostics.Debug.WriteLine("next is: " + App.sites.FirstOrDefault());
                 this.NavigationService.Navigate(App.QAndA[App.sites.FirstOrDefault()]);
             }
+        }
+
+        private void Check(object sender, RoutedEventArgs e)
+        {
+            QA1ans.Text = "TRUE";
+            QA2ans.Text = "FALSE";
+            QA3ans.Text = "FALSE";
+            QA4ans.Text = "TRUE";
+            QA5ans.Text = "FALSE";
+
+            if ((bool)QA1.IsChecked)
+            {
+                QA1.Foreground = Brushes.Blue;
+            }
+            else
+            {
+                QA1.Foreground = Brushes.Red;
+            }
+            if ((bool)QA2.IsChecked)
+            {
+                QA2.Foreground = Brushes.Blue;
+            }
+            else
+            {
+                QA2.Foreground = Brushes.Red;
+            }
+            if (!(bool)QA3.IsChecked)
+            {
+                QA3.Foreground = Brushes.Blue;
+            }
+            else
+            {
+                QA3.Foreground = Brushes.Red;
+            }
+            if (!(bool)QA4.IsChecked)
+            {
+                QA4.Foreground = Brushes.Blue;
+            }
+            else
+            {
+                QA4.Foreground = Brushes.Red;
+            }
+            if ((bool)QA5.IsChecked)
+            {
+                QA5.Foreground = Brushes.Blue;
+            }
+            else
+            {
+                QA5.Foreground = Brushes.Red;
+            }
+            SnapchatANS Snapchat= new SnapchatANS();
+            Snapchat.Show();
         }
     }
 }
