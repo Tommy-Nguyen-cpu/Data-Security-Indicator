@@ -34,7 +34,7 @@ namespace Data_Security_Indicator
 
         private void Continue(object sender, RoutedEventArgs e)
         {
-            if (App.sites.Count == 0)
+            if (App.sites.Count != 0)
             {
                 App.sites.RemoveAt(0);
                 System.Diagnostics.Debug.WriteLine("next is: " + App.sites.FirstOrDefault());
